@@ -13,21 +13,19 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Adyel\\Documents\\MeusProjetos\\Curso-C-Sharp\\meuPrimeiroPrograma\\meuPrimeiroPrograma.csproj",
+      "projectUniqueName": "C:\\Users\\Adyel\\Documents\\Repositórios\\Curso-C-Sharp\\meuPrimeiroPrograma\\meuPrimeiroPrograma.csproj",
       "projectName": "meuPrimeiroPrograma",
-      "projectPath": "C:\\Users\\Adyel\\Documents\\MeusProjetos\\Curso-C-Sharp\\meuPrimeiroPrograma\\meuPrimeiroPrograma.csproj",
+      "projectPath": "C:\\Users\\Adyel\\Documents\\Repositórios\\Curso-C-Sharp\\meuPrimeiroPrograma\\meuPrimeiroPrograma.csproj",
       "packagesPath": "C:\\Users\\Adyel\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Adyel\\Documents\\MeusProjetos\\Curso-C-Sharp\\meuPrimeiroPrograma\\obj\\",
+      "outputPath": "C:\\Users\\Adyel\\Documents\\Repositórios\\Curso-C-Sharp\\meuPrimeiroPrograma\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Adyel\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\Adyel\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
