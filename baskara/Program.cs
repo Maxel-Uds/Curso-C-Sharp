@@ -14,9 +14,8 @@ namespace baskara
             String[] vet = Console.ReadLine().Split(' ');
             double a = double.Parse(vet[0]), b = double.Parse(vet[1]), c = double.Parse(vet[2]);
             double delta = Math.Pow(b,2) - (4 * a * c);
-            double x1 = 0.0;
-            double x2 = 0.0;
-
+            double x1, x2;
+    
             if (a == 0) {
                 Console.WriteLine("A equação digitada não é do segundo grau");
             }
@@ -26,7 +25,7 @@ namespace baskara
             }
             else if (delta > 0) {
                 x1 = (-b + Math.Sqrt(delta))/(2 * a);
-                x1 = (-b - Math.Sqrt(delta))/(2 * a);
+                x2 = (-b - Math.Sqrt(delta))/(2 * a);
                 Console.WriteLine("A equação tem delta igual a " + delta + " e duas raízes distintas com X1 igual a " + x1.ToString("F2") + " e X2 igual a " + x2.ToString("F2"));
             }
             else {
