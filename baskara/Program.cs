@@ -17,18 +17,22 @@ namespace baskara
             double x1, x2;
     
             if (a == 0) {
+                Console.WriteLine("---------------------------------------");
                 Console.WriteLine("A equação digitada não é do segundo grau");
             }
             else if (delta == 0) {
                 x1 = (-b + Math.Sqrt(delta))/(2 * a);
+                Console.WriteLine("---------------------------------------");
                 Console.WriteLine("A equação tem delta igual a " + delta + " e duas raízes iguais a " + x1.ToString("F2"));
             }
             else if (delta > 0) {
                 x1 = (-b + Math.Sqrt(delta))/(2 * a);
                 x2 = (-b - Math.Sqrt(delta))/(2 * a);
+                Console.WriteLine("---------------------------------------");
                 Console.WriteLine("A equação tem delta igual a " + delta + " e duas raízes distintas com X1 igual a " + x1.ToString("F2") + " e X2 igual a " + x2.ToString("F2"));
             }
             else {
+                Console.WriteLine("---------------------------------------");
                 Console.WriteLine("A equação possui delta negativo igual a " + delta + " e não possui raízes no conjunto dos reais.");
             }
         }
