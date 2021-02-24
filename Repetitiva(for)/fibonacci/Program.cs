@@ -7,10 +7,9 @@ namespace fibonacci
         static void Main(string[] args)
         {
             int x = 0, y = 0, z = 1;
-            Console.Write(y);
             for (int i = 1; i <= 15; i++) {
-                x = y + z;
                 Console.Write($" {x}");
+                x = y + z;
                 z = y;
                 y = x;
             }
