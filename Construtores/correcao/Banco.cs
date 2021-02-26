@@ -1,20 +1,16 @@
 using System.Globalization;
 
-namespace exercicio
+namespace correcao
 {
     public class Banco
     {
         public string Nome { get; private set; }
-        public int Conta { get; private set; }
+        public int Conta { get; set; }
         public double Saldo { get; private set; }
 
-        public Banco (string nome, int conta) {
+        public Banco(string nome, int conta) {
             Nome = nome;
             Conta = conta;
-        }
-
-        public void PrimeiroDepos (double pdeposito){
-            Saldo = pdeposito;
         }
 
         public void Deposito(double deposito) {
