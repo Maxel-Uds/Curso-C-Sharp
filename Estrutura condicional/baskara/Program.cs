@@ -15,7 +15,7 @@ namespace baskara
             double a = double.Parse(vet[0]), b = double.Parse(vet[1]), c = double.Parse(vet[2]);
             double delta = Math.Pow(b,2) - (4 * a * c);
             double x1, x2;
-    
+
             if (a == 0) {
                 Console.WriteLine("---------------------------------------");
                 Console.WriteLine("A equação digitada não é do segundo grau");
