@@ -10,7 +10,7 @@ namespace correcao
             Console.Write("Entre com o número da conta: ");
             int conta = int.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
             Console.Write("Entre com o titular da conta: ");
-            char nome = char.Parse(Console.ReadLine());
+            string nome = Console.ReadLine();
             
             Banco b = new Banco(nome, conta);
 
