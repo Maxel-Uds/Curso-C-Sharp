@@ -23,7 +23,7 @@ namespace exercicio
                 Console.WriteLine();
             }
 
-            for (int i = 0; i <= 9; i++ ) {
+            for (int i = 0; i <= v.Length; i++) {
                 if (v[i] != null) {
                     Console.WriteLine("Quarto - " + i + ": " + v[i].Nome + ", " + v[i].Email);
                 }
