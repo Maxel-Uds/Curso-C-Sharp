@@ -6,6 +6,7 @@ namespace exercicio
     {
         static void Main(string[] args)
         {
+            int a = 0;
             Console.Write("Quantos quartos serão alugados: ");
             int n = int.Parse(Console.ReadLine());
             Pensionato[] v = new Pensionato[10];
@@ -23,10 +24,11 @@ namespace exercicio
                 Console.WriteLine();
             }
 
-            for (int i = 0; i <= v.Length; i++) {
-                if (v[i] != null) {
-                    Console.WriteLine("Quarto - " + i + ": " + v[i].Nome + ", " + v[i].Email);
+            foreach (Pensionato obj in v) {
+                if (v[a] != null) {
+                    Console.WriteLine("Quarto - " + a + ": " + v[a].Nome + ", " + v[a].Email);
                 }
+                a++;
             }
         }
     }
