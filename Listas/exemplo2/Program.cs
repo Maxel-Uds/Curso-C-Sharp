@@ -13,7 +13,7 @@ namespace exemplo2
             list.Add("Alex");
             list.Add("Bob");
             list.Add("Ana");
-            list.Insert(2, "Marcos");
+            list.Insert(2, "Marco");
 
             foreach(string obj in list) {
                 Console.WriteLine(obj);
@@ -32,7 +32,23 @@ namespace exemplo2
             int pos2 = list.FindLastIndex(x => x[0] == 'A');
             Console.WriteLine("Posição do último nome com A: " + pos2);
 
+            List<string> list2 = list.FindAll(x => x.Length == 5);
+            Console.WriteLine("-----------------------------------");
+            foreach(string obj in list2) {
+                Console.WriteLine(obj);
+            }
 
+            list.RemoveRange(2, 2);
+            Console.WriteLine("-----------------------------------");
+            foreach(string obj in list) {
+                Console.WriteLine(obj);
+            }
+
+            list.RemoveAll(x => x[0] == 'M');
+            Console.WriteLine("-----------------------------------");
+            foreach(string obj in list) {
+                Console.WriteLine(obj);
+            }
         }
     }
 }
