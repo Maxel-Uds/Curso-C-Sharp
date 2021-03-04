@@ -20,7 +20,13 @@ namespace exercicio
                 string email = Console.ReadLine();
                 Console.Write("Quarto: ");
                 int qt = int.Parse(Console.ReadLine());
+                if (v[qt] == null) {
                 v[qt] = new Pensionato(nome, email);
+                }
+                else {
+                    Console.Write("Este quarto já está ocupado!");
+                    i--;
+                }
                 Console.WriteLine();
             }
 
