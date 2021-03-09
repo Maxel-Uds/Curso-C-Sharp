@@ -26,6 +26,8 @@ namespace baskara
                 Console.WriteLine();
                 Console.Write("Quer calcular a raíz de outra equação (s/n)? ");
                 resp = Console.ReadLine();
+                Console.WriteLine("---------------------------------------");
+                Console.WriteLine();
             }
         }
     }
