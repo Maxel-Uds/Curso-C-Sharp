@@ -1,6 +1,6 @@
 namespace exercicio1.Entities.Enums
 {
-    public enum WorkerLevel
+    public enum WorkerLevel : int
     {
         Junior = 0,
         MidLevel = 1,
