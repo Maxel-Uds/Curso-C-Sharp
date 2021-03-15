@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 namespace exercicio2.Entities
 {
     public class Post
