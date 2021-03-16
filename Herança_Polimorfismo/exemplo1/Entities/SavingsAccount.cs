@@ -1,6 +1,6 @@
 namespace exemplo1.Entities
 {
-    public class SavingsAccount : Account
+    public sealed class SavingsAccount : Account //Classe com herança e selada
     {
         public double InterestRate { get; set; }
 
@@ -18,9 +18,10 @@ namespace exemplo1.Entities
             Balance += Balance * InterestRate; 
         }
 
-        public override void WithDraw(double amount)
+        public sealed override void WithDraw(double amount) //Método selado
         {
-            Balance -= amount;
+            base.WithDraw(amount); //Método chamado da superclasse para não precisar ser repetido.
+            Balance -= 2.0;
         }
     }
 }
