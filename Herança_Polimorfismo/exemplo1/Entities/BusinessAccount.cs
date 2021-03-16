@@ -8,7 +8,7 @@ namespace exemplo1.Entities
         {
         }
 
-        public Account(int number, string holder, double balance, double loanLimit) : base(number, holder, balance) //Reutilizando o construtor do Account
+        public BusinessAccount(int number, string holder, double balance, double loanLimit) : base(number, holder, balance) //Reutilizando o construtor do Account
         {
             LoanLimit = loanLimit;
         }
@@ -17,7 +17,7 @@ namespace exemplo1.Entities
         {
             if(amount <= LoanLimit)
             {
-                Balance += amount;
+                Balance = Balance + amount;
             }
         }
     }
