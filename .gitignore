@@ -447,3 +447,4 @@ meuPrimeiroPrograma/obj/Debug/net5.0/meuPrimeiroPrograma.pdb
 meuPrimeiroPrograma/obj/Debug/net5.0/meuPrimeiroPrograma.genruntimeconfig.cache
 meuPrimeiroPrograma/obj/Debug/net5.0/meuPrimeiroPrograma.dll
 *.dll
+*.csproj
