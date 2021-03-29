@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Globalization;
 using sln_sem_interface.Entities;
+using sln_sem_interface.Services;
 
 namespace sln_sem_interface
 {
@@ -21,8 +22,11 @@ namespace sln_sem_interface
             double valuePerDay = double.Parse(Console.ReadLine());
 
             CarRental rental = new CarRental(start, finish, new CarModel(model));
+            RentalService rentalService = new RentalService(valuePerHour, valuePerDay);
+            rentalService.ProcessInvoice(rental);
 
             Console.WriteLine();
+            Console.WriteLine(rental.Invoice);
 
         }
     }

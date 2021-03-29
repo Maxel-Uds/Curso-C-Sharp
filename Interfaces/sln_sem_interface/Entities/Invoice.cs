@@ -7,7 +7,6 @@ namespace sln_sem_interface.Entities
     {
         public double BasicPayment { get; set; }
         public double Tax { get; set; }
-        public double TotalPayment { get; set; }
 
         public Invoice(double basicPayment, double tax)
         {
