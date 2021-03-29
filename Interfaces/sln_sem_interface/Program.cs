@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Globalization;
 using sln_sem_interface.Entities;
 
 namespace sln_sem_interface
@@ -9,24 +10,19 @@ namespace sln_sem_interface
         {
             Console.WriteLine("Entre com os dados da locação:");
             Console.Write("Modelo do carro: ");
-            string name = Console.ReadLine();
-            Console.Write("Retirada (DD/MM/AAAA HH:MM): ");
-            DateTime pickUp = DateTime.Parse(Console.ReadLine());
+            string model = Console.ReadLine();
+            Console.Write("Retirada (dd/MM/yyyy hh:mm): ");
+            DateTime start = DateTime.ParseExact(Console.ReadLine(), "dd/MM/yyyy HH:mm", CultureInfo.InvariantCulture);
             Console.Write("Entrega (DD/MM/AAAA HH:MM): ");
-            DateTime retur = DateTime.Parse(Console.ReadLine());
+            DateTime finish = DateTime.ParseExact(Console.ReadLine(), "dd/MM/yyyy HH:mm",  CultureInfo.InvariantCulture);
             Console.Write("Valor por hora: ");
             double valuePerHour = double.Parse(Console.ReadLine());
             Console.Write("Valor por dia: ");
             double valuePerDay = double.Parse(Console.ReadLine());
 
-            CarModel model = new CarModel(name);
-            Location location = new Location(model, pickUp, retur, valuePerHour, valuePerDay);
+            CarRental rental = new CarRental(start, finish, new CarModel(model));
 
             Console.WriteLine();
-            Console.WriteLine("RECIBO:");
-            Console.WriteLine("Pagamento básico: " + location.Payment().ToString("F2"));
-            Console.WriteLine("Taxa: " + location.Tax().ToString("F2"));
-            Console.WriteLine("Total: " + location.TotalPayment().ToString("F2"));
 
         }
     }
