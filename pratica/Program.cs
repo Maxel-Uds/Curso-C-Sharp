@@ -1,16 +1,35 @@
 ﻿using System;
+using System.Linq;
+using System.Collections.Generic;
 
-namespace pratica
+class MinhaClasse 
 {
-    class Program
+  public static void Main (string[] args) 
+  {
+    var totalDeCasosDeTeste = int.Parse(Console.ReadLine());
+    List<HashSet<string>> completa = new List<HashSet<string>>();
+
+    for(int i = 1; i <= totalDeCasosDeTeste; i++)
     {
-        static void Main(string[] args)
+        string[] lista = Console.ReadLine().Split(' ');
+        HashSet<string> conj = new HashSet<string>();
+
+        foreach(string obj in lista)
         {
-           int x = int.Parse(Console.ReadLine());
-           for (int i = 1; i <= x; i++) {
-            double a = Math.Pow(i,2), b = Math.Pow(i,3);
-            Console.WriteLine($"{i} {a} {b}");
-           }
+            conj.Add(obj);
         }
+
+        completa.Add(conj);
     }
+    
+    foreach(HashSet<string> obj in completa)
+    {
+        var ordem = obj.OrderBy(item => item);
+        foreach(string item in ordem)
+        {
+          Console.Write(item + " ");
+        }
+        Console.WriteLine();
+    }
+  }
 }
