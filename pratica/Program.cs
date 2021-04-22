@@ -22,6 +22,7 @@ class MinhaClasse
         completa.Add(conj);
     }
     
+    Console.WriteLine();
     foreach(HashSet<string> obj in completa)
     {
         var ordem = obj.OrderBy(item => item);
